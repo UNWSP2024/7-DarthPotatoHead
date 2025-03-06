@@ -1,3 +1,8 @@
+#Program Partially Written By: Ainsley Bellamy
+#Date Written: 03/06/2025
+#Program Title: Larger_Than
+
+
 # Program #2: Larger than n
 # In a program, write a function (with NO output) that accepts two arguments: number n, and a list.
 # Assume that the list contains numbers.
@@ -29,7 +34,8 @@ def main():
 # in the list that are greater than the number.
 def display_larger_than_n_list(n, n_list):
     # Write your code to display all of the numbers in the list that are greater than then number n. below
-    print('In display_larger_than_n_list')
+    new_list = [value for value in n_list if value > n]
+    print(f'In display_larger_than_n_list these are the values larger than {n}: {new_list}')
         
 # Call the main function.
 if __name__ == '__main__':
